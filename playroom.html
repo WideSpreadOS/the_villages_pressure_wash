@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playroom VR</title>
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img src="./public/images/oak/img.png" id="oakImg">
+            <img src="./public/images/oak/height.png" id="oakHgt">
+            <img src="./public/images/oak/roughness.png" id="oakRgh">
+            <img src="./public/images/rustic-wood-planks_1/img.png" id="plankImg">
+            <img src="./public/images/rustic-wood-planks_1/normal.png" id="plankNorm">
+            <img src="./public/images/rustic-wood-planks_1/rough.png" id="plankRough">
+            <img src="./public/images/rustic-wood-planks_1/occ.png" id="plankOcc">]
+            <video src="./public/videos/VIDEO_0723(1).mp4" id="jesseVid" autoplay loop="true"></video>
+
+        </a-assets>
+        <a-videosphere src="#jesseVid"></a-videosphere>
+    </a-scene>
+</body>
+</html>
