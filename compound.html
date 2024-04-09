@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playroom VR</title>
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+    <h1>Play</h1>
+    <h1>Pause</h1>
+
+    <a-scene>
+        <a-assets>
+            <img src="./public/images/oak/img.png" id="oakImg">
+            <img src="./public/images/oak/height.png" id="oakHgt">
+            <img src="./public/images/oak/roughness.png" id="oakRgh">
+            <img src="./public/images/rustic-wood-planks_1/img.png" id="plankImg">
+            <img src="./public/images/rustic-wood-planks_1/normal.png" id="plankNorm">
+            <img src="./public/images/rustic-wood-planks_1/rough.png" id="plankRough">
+            <img src="./public/images/rustic-wood-planks_1/occ.png" id="plankOcc">]
+            <a-asset-item id="ground1" src="./public/models/live_oak_forest_floor.glb"></a-asset-item>
+            <a-asset-item id="oak1" src="./public/models/oak_tree.glb"></a-asset-item>
+            <a-asset-item id="barn" src="./public/models/inspection_barn.glb"></a-asset-item>
+
+        </a-assets>
+
+
+        <a-entity gltf-model="#ground1" position="0 0 0" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="-5 0 0" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="5 0 0" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="5 0 5" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="5 0 -5" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="0 0 -5" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="0 0 5" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="-5 0 5" scale="2.5 0.1 2.5"></a-entity>
+        <a-entity gltf-model="#ground1" position="-5 0 -5" scale="2.5 0.1 2.5"></a-entity>
+        <a-plane color="#72828" position="0 0 0" scale="100 100 1" rotation="-90 0 0" material="color: #2e2828; offset: [object Object]; repeat: [object Object]; shader: flat"></a-plane>
+        <a-entity gltf-model="#oak1" position="-5 0 -5" scale="2.5 2.5 2.5"></a-entity>
+        <a-entity gltf-model="#oak1" position="5 0 5" scale="3 7 2" rotation="0 40 0"></a-entity>
+        <a-entity gltf-model="#barn" position="4 0 -18" scale="1 1 1" rotation="0 0 0"></a-entity>
+
+        <a-sky color="lightskyblue"></a-sky>
+    </a-scene>
+
+</body>
+</html>
